@@ -3,14 +3,17 @@
 ### Lab Test Scripts
 The lab test scripts were written utilizing the [Protractor Framework](http://protractortest.org). 
 To get setup, check that out. 
-The [configuration file]() will run anything in the specs folder of the form *.spec.js - 
-to make it easy to only run a single lab, I created the [./addSpec.sh]() script that will do it for you. Make sure that all the .sh files have execute permissions (addSpec.sh, fileNameReset.sh, and runTests.sh). 
+The [configuration file](https://github.com/BYUCS260/TA-Resources/blob/master/conf.js) will run anything in the specs folder of the form *.spec.js - 
+to make it easy to only run a single lab, I created the [./addSpec.sh](https://github.com/BYUCS260/TA-Resources/blob/master/addSpec.sh) script that will do it for you. Make sure that all the .sh files have execute permissions (addSpec.sh, fileNameReset.sh, and runTests.sh). 
 
-The [page objects]() have been copied over to the lab starter code repositories - so if you change them here make sure that they get updated there. 
-For more information about the page object pattern, check out [this article](). If a lab changes requirements, you'll likely need to update the tests, so you might want to read through them and get familiar with the ideas and concepts presented. 
-The tests are written as End to End tests, which focus on testing user flows. Make sure to check out the [protractor documentation](http://www.protractortest.org/#/api) before you try to change them too much...
+The [page objects](https://github.com/BYUCS260/TA-Resources/tree/master/pageobjects) have been copied over to the lab starter code repositories - so if you change them here make sure that they get updated there. 
+For more information about the page object pattern, check out [this article](http://www.protractortest.org/#/page-objects). 
+If a lab changes requirements, you'll likely need to update the tests, so you might want to read through them and get familiar with the ideas and concepts presented. 
+The tests are written as End to End tests, which focus on testing user flows. 
+Make sure to check out the [protractor documentation](http://www.protractortest.org/#/api) before you try to change them too much...
 
-[runTests.sh]() was created to allow mass grading of a single lab to occur. In order to use it, check out the file itself, as well as [sample.txt](). If you can't figure it out from those two, ask me.
+[runTests.sh](https://github.com/BYUCS260/TA-Resources/blob/master/runTests.sh) was created to allow mass grading of a single lab to occur. 
+In order to use it, check out the file itself, as well as [sample.txt](https://github.com/BYUCS260/TA-Resources/blob/master/sample.txt). If you can't figure it out from those two, ask me.
 I would typically have a spreadsheet up with all the students, 
 and fill in which tests passed and how many design/TA points they got while the tests were running. 
 Most of the tests should take long enough for you to decide those things.
