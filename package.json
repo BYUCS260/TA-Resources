@@ -1,0 +1,21 @@
+{
+  "name": "ta-resources260",
+  "version": "1.0.0",
+  "description": "A bundle of resources provided for the TAs of BYUCS260",
+  "main": "index.js",
+  "scripts": {
+    "test": "protractor conf.js"
+  },
+  "keywords": ["javascript", "testing", "protractor", "CS260"],
+  "author": "Jordan Nielson",
+  "license": "MIT",
+  "devDependencies": {
+    "jasmine": "^2.5.2",
+    "jasmine-reporters": "^2.2.0",
+    "jasmine-spec-reporter": "^2.7.0",
+    "protractor": "^4.0.11"
+  },
+  "dependencies": {
+    "protractor-intercept": "^1.0.2"
+  }
+}
