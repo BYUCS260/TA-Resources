@@ -133,10 +133,10 @@ for group in range(1, len(groupSheets)):
             averageSheet.cell(row=group, column=y).value = sum / numRows
 
         groupSheet.cell(row=currentRow, column=2).value = "AVERAGES:"
-        groupSheet.cell(row=currentRow, column=3).value = '=AVERAGE(D' + \
-            str(currentRow) + ':J' + str(currentRow) + ')'
+        # groupSheet.cell(row=currentRow, column=3).value = '=AVERAGE(D' + \
+            # str(currentRow) + ':J' + str(currentRow) + ')'
         averageSheet.cell(row=group, column=2).value = "AVERAGES:"
-        averageSheet.cell(row=group, column=3).value = averageValues / 7
+        # averageSheet.cell(row=group, column=3).value = averageValues / 7
 
 wb.save("Parsed" + path)
 
