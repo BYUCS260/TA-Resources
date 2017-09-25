@@ -110,7 +110,7 @@ for group in range(1, len(groupSheets)):
         # Create the Average row (currently hard-coded for the form as of
         # 9/4/17):
         averageValues = 0
-        for y in range(4, 5): #TODO: UPDATE IF FORM CHANGES
+        for y in range(4, 6): #TODO: UPDATE IF FORM CHANGES
             Letter = openpyxl.cell.get_column_letter(y)
             groupSheet.cell(row=currentRow, column=y).value = '=AVERAGE(' + \
                 Letter + '2:' + Letter + str(currentRow - 1) + ')'
