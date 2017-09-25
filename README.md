@@ -1,5 +1,8 @@
 # CS 260 TA Resources
 
+## Getting Started
+You'll want to clone this repository, cd into it, and then run `npm install` and `pip install -r requirements.txt`. These should both work successfully, and allow you to run the scripts detailed below. After that, it depends on what you're doing!
+
 ### Lab Test Scripts
 The lab test scripts were written utilizing the [Protractor Framework](http://protractortest.org). 
 To get setup, check that out. 
@@ -38,6 +41,15 @@ and it should run the test.
 
 
 ### Spreadsheet Parsing Scripts
+
+#### Class Activities:
+[parseAct.py](https://github.com/jnielson94/test201/blob/master/parseACT.py) Is utilized to parse and sort the names from a class activity spreadsheet:
+
+![Class Activity Spreadsheet](https://github.com/jnielson94/test201/blob/master/sampleActivity.png)
+
+If will ask for the name of the excel file - $1 - (I typically change it to something like 1.xlsx for the first one and so on) and will spit out a file called activity$1 (if you leave off the .xlsx when inputting the path it will add it on for you). This one is probably useless if we do the spreadsheet correctly in the first place... but ya never know.
+
+#### Creative Assignments:
 [parseEvals.py](https://github.com/jnielson94/test201/blob/master/parseEvals.py) Is utilized to parse the responses to the creative evaluation form shown below:
 
 ![Creative Evaluation Form](https://github.com/jnielson94/test201/blob/master/sampleEvaluations.png)
@@ -52,9 +64,9 @@ The parseEvals script will output:
 - A file named averages$1, which should contain a row for each group and the averages from the form number inputs for an easy copy/paste to the google doc the TAs use for evaluating projects
 - A folder named whatever you told it to, which contains a file for each group with their evaluations. I typically uploaded this to google drive and sent out the link to the folks (all the evaluator names should be gone, and there are no grades on the sheets)
 
-[parseAct.py](https://github.com/jnielson94/test201/blob/master/parseACT.py) Is utilized to parse and sort the names from a class activity spreadsheet:
+### Other Information on Creatives
+The groups for the creative assignments are historically assigned in a spreadsheet that looks like this:
 
-![Class Activity Spreadsheet](https://github.com/jnielson94/test201/blob/master/sampleActivity.png)
 
-If will ask for the name of the excel file - $1 - (I typically change it to something like 1.xlsx for the first one and so on) and will spit out a file called activity$1 (if you leave off the .xlsx when inputting the path it will add it on for you).
+Assuming the due date is appropriately before class, the TAs should review each creative assignment on the spreadsheet.
 
