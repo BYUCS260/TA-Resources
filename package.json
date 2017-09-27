@@ -6,7 +6,12 @@
   "scripts": {
     "test": "protractor conf.js"
   },
-  "keywords": ["javascript", "testing", "protractor", "CS260"],
+  "keywords": [
+    "javascript",
+    "testing",
+    "protractor",
+    "CS260"
+  ],
   "author": "Jordan Nielson",
   "license": "MIT",
   "devDependencies": {

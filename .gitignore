@@ -42,3 +42,6 @@ testResults*
 *.xlsx
 
 .vscode
+
+
+.DS_Store
