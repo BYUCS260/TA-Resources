@@ -32,21 +32,27 @@ describe('Lab 2 Passoff', function () {
       })
     }, waitForAjax)
   })
-
-  it("should be able to search for a city's weather", function (done) {
+  
+  it("should be able to search for a city's weather", done => {
+    var city = 'Manila';
     page.cityInput.clear().click()
-    'Manila'.split('').forEach((c) => page.cityInput.sendKeys(c))
-    expect(page.suggestionsList.getText()).toContain('Manila')
-    expect(page.allSuggestions.count()).toBe(1)
+    city.split('').forEach((c) => page.cityInput.sendKeys(c))
     page.weatherButton.click()
-    setTimeout(function () {
-      page.cityTextArea.getText().then(text => {
-        expect(text).toBe('Manila')
-        page.weatherText.getText().then(text2 => {
-          expect(text2).toContain('Manila')
-          done()
+    setTimeout(() => {
+      Promise.all([
+        page.suggestionsList.getText(),
+        page.allSuggestions.count(),
+        page.cityTextArea.getText(),
+        page.weatherText.getText()
+      ])
+        .then(([suggestions, numSuggestions, chosenCity, cityWeather]) => {
+          expect(suggestions).toContain(city);
+          expect(numSuggestions).toEqual(1);
+          expect(chosenCity).toEqual(city);
+          expect(cityWeather).toContain(city);
         })
-      })
+        .then(done)
+        .catch(done.fail)
     }, waitForAjax)
   })
 
